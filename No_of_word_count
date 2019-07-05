@@ -1,0 +1,22 @@
+# String
+
+#include <stdio.h>
+int main()
+{
+   char s[10],ch;
+int i=0,c=0;  
+   printf("Enter the string\n");
+   scanf("%s",s);
+   
+   printf("Enter the char to find\n");
+   scanf(" %c",&ch);
+   
+   for(i=0;s[i];i++)
+   {
+       if(s[i]==ch)
+   c++;
+   }
+   printf("count=%d\n",c);
+
+    return 0;
+}
