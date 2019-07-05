@@ -1,0 +1,22 @@
+# String
+
+
+#include <stdio.h>
+int main()
+{
+   char s[10],d[6]={'a','e','i','o','u'};
+   int i,j;  
+   
+   printf("Enter the string\n");
+   scanf("%s",s);
+   
+ 
+   
+   for(i=0;s[i];i++)
+   {
+       for(j=0;d[j];j++)
+       if(s[i]==d[j])
+   printf("%c",s[i]);
+   }
+    return 0;
+}
