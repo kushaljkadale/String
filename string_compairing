@@ -1,0 +1,47 @@
+# String
+
+#include <stdio.h>
+int my_cmp(char *,char *);
+int main()
+{
+   char s[10],d[10];
+   int ret;
+   
+   printf("Enter the 1st string\n");
+   scanf("%s",s);
+   
+   printf("Enter the 2nd string\n");
+   scanf("%s",d);
+   
+   printf("string 1=%s \nstring 2 =%s\n",s,d);
+   
+   ret=my_cmp(s,d);
+   
+   if(ret==1)
+   {
+       printf("both are equal\n");
+   }
+   else
+   {
+       printf("not equal\n");
+       
+   }
+    return 0;
+}
+int my_cmp(char *p,char *q)
+{
+    
+    int i;
+    
+    for(i=0;p[i];i++)
+    {
+        if(p[i]!=q[i])
+        break;
+        
+    }
+    if(p[i]==q[i])
+    return 1;
+    else
+    return 0;
+    
+}
