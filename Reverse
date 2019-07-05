@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{
+   char s[10],ch;
+   int i,j;
+   
+   printf("Enter the string\n");
+   scanf("%s",s);
+   
+   printf("string=%s\n",s);
+   
+   for(i=0;s[i];i++);
+   
+   printf("count=%d\n",i);
+   
+   
+   for(i=i-1,j=0;j<i;i--,j++)
+    {
+        ch=s[j];
+        s[j]=s[i];
+        s[i]=ch;
+    }
+    
+    printf("after reversing=%s\n",s);
+}
